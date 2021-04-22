@@ -20,7 +20,7 @@ then
 					mv /dev/weboff${elem: -1} /dev/$elem
 				done
 			else 
-				echo 'usage ./weboff -off [seconds]'
+				echo 'usage ./weboff -off/-on [seconds]'
 			fi
 		fi
 	elif [ $1 == '-on' ] 
@@ -32,8 +32,8 @@ then
 			mv /dev/$elem /dev/video${elem: -1}
 		done
 	else
-		echo 'usage ./weboff -off [seconds]'
+		echo 'usage ./weboff -off/-on [seconds]'
 	fi
 else
-	echo 'usage ./weboff -off [seconds]'
+	echo 'usage ./weboff -off/-on [seconds]'
 fi
